@@ -98,7 +98,7 @@ let controller = {
         $(this.view.el).on('click', '#addOne', this.addOne.bind(this)) 
         $(this.view.el).on('click', '#minusOne', this.minusOne.bind(this))
         $(this.view.el).on('click', '#reset', this.reset.bind(this))
-    }//每个事假绑定一个this,确保每一个事件里的this都是当前的controller
+    }//每个事件绑定一个this,确保每一个事件里的this都是当前的controller
 }
 controller.init({ view: view, model: model })
 
